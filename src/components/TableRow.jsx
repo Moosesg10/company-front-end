@@ -52,7 +52,7 @@ const context = useContext(FormContext);
             {rol}
           </td>
           <td style={{ color: "#071ca8f3", borderRight: "thin solid #f5f5f5" }}>
-            {salary}
+            {toString(salary).slice(3)}
           </td>
           <td style={{ borderRight: "thin solid #f5f5f5" }}>
             <button onClick={() => delet(id, index, data,roles,deletEmployee)}>Eliminar</button>
@@ -75,12 +75,12 @@ const context = useContext(FormContext);
                 <>
 
                 {
-                  data.rol == "" ? <>
+                  !data.rol  ? <>
                   <option value="empleado">Empleado</option> 
                   <option value="admin">Admin</option>
                   </>
                   :
-                  data.rol === "admin"?  <option value="empleado">Empleado</option> :
+                  data.rol === "admin" ?  <option value="empleado">Empleado</option> :
                   <option value="admin">Admin</option>
                  
                 }
