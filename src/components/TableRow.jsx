@@ -75,8 +75,8 @@ const context = useContext(FormContext);
                 <>
 
                 {
-                  data.rol === "" ? <>
-                       <option value="empleado">Empleado</option> 
+                  data.rol == "" ? <>
+                  <option value="empleado">Empleado</option> 
                   <option value="admin">Admin</option>
                   </>
                   :
