@@ -73,17 +73,17 @@ const context = useContext(FormContext);
               <option >Select Rol</option>
               {mostarOptionsAddRol && (
                 <>
-                 {
-                  data.rol === "admin"?  <option value="empleado">Empleado</option> :
-                  <option value="admin">Admin</option>
-                 }
-                    {
-                  data.rol === "" &&  
-                  <>
-                  <option value="empleado">Empleado</option> 
+
+                {
+                  data.rol === "" ? <>
+                       <option value="empleado">Empleado</option> 
                   <option value="admin">Admin</option>
                   </>
-                 }
+                  :
+                  data.rol === "admin"?  <option value="empleado">Empleado</option> :
+                  <option value="admin">Admin</option>
+                 
+                }
                 </>
               )}
             </select>
