@@ -5,7 +5,7 @@ import { URLAPI } from "../config";
 
 function FormLogin() {
 
-console.log(URLAPI)
+
 
 const [invalidUsers, setinvalidUsers] = useState(false)
 const [invalidPassword, setiinvalidPssword] = useState(false)
