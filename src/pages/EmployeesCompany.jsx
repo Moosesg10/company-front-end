@@ -3,6 +3,7 @@ import FormContext from "../context/FormContext";
 import FormEmpleados from "../components/FormEmpleados";
 import Table from "../components/Table";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { URLAPI } from "../config";
 
 function EmployeesCompany() {
   const context = useContext(FormContext);
@@ -14,7 +15,7 @@ function EmployeesCompany() {
 
   const getAdmin = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/api/admin/${users}`);
+      const res = await fetch(`${URLAPI}api/admin/${users}`);
       const result = await res.json();
       const user = result[0].name;
       let admin = result[0].admin;

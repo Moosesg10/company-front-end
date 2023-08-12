@@ -2,7 +2,7 @@ import { ROL_Z, ROL_x, ROL_y, URLAPI } from "../config";
 
 const asignamentRol = async (options,optionsadmin,optionsemployee,setRols,setMostarOptionsAddRol,getEmployee,admin) => {
     try {
-      const res = await fetch(`http://localhost:3000/api/admin`);
+      const res = await fetch(`${URLAPI}api/admin`);
       const result = await res.json();
       const arrayid = result.map((datas) => datas.id);
       let proccess
