@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_URL_API: "http://localhost:3000/";
+  readonly VITE_URL_API: "https://comapny-backend-production.up.railway.app/";
   VITE_ROL_Z: "owner";
   VITE_ROL_X: "admin";
   VITE_ROL_Y: "empleado";
