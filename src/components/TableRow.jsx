@@ -29,8 +29,7 @@ const context = useContext(FormContext);
   const [mostarOptionsAddRol, setMostarOptionsAddRol] = useState(false);
   const [rols, setRols] = useState(false);
 
-
-
+ 
 
 //Funciones de Manejo de Roles 
   useEffect(() => {
@@ -52,7 +51,7 @@ const context = useContext(FormContext);
             {rol}
           </td>
           <td style={{ color: "#071ca8f3", borderRight: "thin solid #f5f5f5" }}>
-            {toString(salary).slice(3)}
+            {salary}
           </td>
           <td style={{ borderRight: "thin solid #f5f5f5" }}>
             <button onClick={() => delet(id, index, data,roles,deletEmployee)}>Eliminar</button>
