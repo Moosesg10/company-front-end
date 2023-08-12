@@ -37,7 +37,7 @@ const context = useContext(FormContext);
     getAdmin(params,setRoles);
   }, []);
   useEffect(() => {
-    if (rols) asignamentRol(options,optionsadmin,optionsemployee,setRols,setMostarOptionsAddRol,getEmployee,admin);
+    if (rols) asignamentRol(admin,options,optionsadmin,optionsemployee,setRols,setMostarOptionsAddRol,getEmployee);
   }, [rols]);
 
   return (

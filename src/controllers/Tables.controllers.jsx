@@ -1,6 +1,6 @@
 import { ROL_Z, ROL_x, ROL_y, URLAPI } from "../config";
 
-const asignamentRol = async (options,optionsadmin,optionsemployee,setRols,setMostarOptionsAddRol,getEmployee,admin) => {
+const asignamentRol = async (admin,options,optionsadmin,optionsemployee,setRols,setMostarOptionsAddRol,getEmployee) => {
     try {
       const res = await fetch(`${URLAPI}api/admin`);
       const result = await res.json();
