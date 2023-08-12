@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormContext from "../context/FormContext";
+import { URLAPI } from "../config";
 
 function FormLogin() {
 
@@ -13,7 +14,7 @@ const navigate = useNavigate()
 
 const getAdmin = async () => {
   try {
-    const res =  await fetch(`http://localhost:3000/api/admin/${ususario.name}`)
+    const res =  await fetch(`${URLAPI}api/admin/${ususario.name}`)
     const result = await res.json()
     let users = result[0].name
     let password = result[0].password
