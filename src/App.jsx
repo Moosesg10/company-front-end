@@ -10,6 +10,7 @@ function App() {
        <Route path='/company/admin' element={ <LoginComapany />}/>
         <Route path={`/company/admin/:users`} element={ <EmployeesCompany />}/> 
     </Routes>
+    <h1>env : {import.meta.env.VITE_URL_API }</h1>
     <Analytics/>
   </>
   )
