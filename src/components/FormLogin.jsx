@@ -15,12 +15,9 @@ const navigate = useNavigate()
 const getAdmin = async () => {
   try {
     const res =  await fetch(`${URLAPI}api/admin/${ususario.name}`)
-    console.log(res)
-    console.log(URLAPI)
     const result = await res.json()
     let users = result[0].name
     let password = result[0].password
-
 
 
   if(users === ususario.name && password === ususario.pasword) {navigate(`/company/admin/${users}`)}else{
