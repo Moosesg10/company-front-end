@@ -5,11 +5,11 @@ import dotenv from "dotenv"
 export default defineConfig({
   plugins: [react()],
   define: {
-    'process.env.VITE_URL_API ':JSON.stringify(process.env.VITE_URL_API ),
-    'process.env.VITE_ROL_X ':JSON.stringify(process.env.VITE_ROL_X ),
-    'process.env.VITE_ROL_Y ':JSON.stringify(process.env.VITE_ROL_Y ),
-    'process.env.VITE_ROL_Z  ':JSON.stringify(process.env.VITE_ROL_Z ),
-    'process.env.VITE_CONFIRM ':JSON.stringify(process.env.VITE_CONFIRM ),
-    'process.env.VITE_NEGATIVE ':JSON.stringify(process.env.VITE_NEGATIVE ),
+    'process.env.VITE_URL_API ':process.env.VITE_URL_API ,
+    'process.env.VITE_ROL_X ':process.env.VITE_ROL_X ,
+    'process.env.VITE_ROL_Y ':process.env.VITE_ROL_Y ,
+    'process.env.VITE_ROL_Z  ':process.env.VITE_ROL_Z ,
+    'process.env.VITE_CONFIRM ':process.env.VITE_CONFIRM ,
+    'process.env.VITE_NEGATIVE ':process.env.VITE_NEGATIVE ,
   }
 }) 
