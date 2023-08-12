@@ -10,7 +10,7 @@ const asignamentRol = async (options,optionsadmin,optionsemployee,setRols,setMos
    
  if (proccess) {
         if (admin.rol === "admin")
-          await fetch(`${URLAPI}api/admin/`, optionsadmin);
+          await fetch(`${URLAPI}api/admin`, optionsadmin);
         await fetch(`${URLAPI}api/admin/${admin.id}`, optionsemployee);
         setRols(false);
         setMostarOptionsAddRol(false);
