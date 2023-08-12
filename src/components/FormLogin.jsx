@@ -18,7 +18,7 @@ const getAdmin = async () => {
     const result = await res.json()
     let users = result[0].name
     let password = result[0].password
-
+    console.log(URLAPI)
 
   if(users === ususario.name && password === ususario.pasword) {navigate(`/company/admin/${users}`)}else{
       if(password !== ususario.pasword ){
